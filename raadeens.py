@@ -13,9 +13,8 @@ while Rounds <= 20:
 
          while gokteller >= 0:
             # print(randomNummer)
-
              if gokteller == 0:
-                print('you lose!'  'Het getal was: ' + str(randomNummer))
+                print('you lose!'  ' Het getal was: ' + str(randomNummer))
                 veloren = veloren + 1
                 break
 
@@ -46,3 +45,5 @@ while Rounds <= 20:
     else: 
         break
     Rounds = Rounds + 1
+
+print('Final Score!' + '\n' + ' Je hebt zoveel gewonnen: ' + str(gewonnen) + ' Je hebt zoveel veloren: ' +str(veloren))
