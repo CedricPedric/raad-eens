@@ -11,7 +11,14 @@ while Rounds <= 20:
     if AnotherGame == 'yes':
          randomNummer = random.randrange(1000)
 
-         while gokteller >= 1:
+         while gokteller >= 0:
+            # print(randomNummer)
+
+             if gokteller == 0:
+                print('you lose!'  'Het getal was: ' + str(randomNummer))
+                veloren = veloren + 1
+                break
+
              guess = input('Je hebt nog: ' + str(gokteller) + ' Pogingen'+ ' Raad een nummer onder de 1000 of stop met "Q": ')
              if guess != 'Q':
                  if int(guess) == randomNummer:
@@ -31,8 +38,6 @@ while Rounds <= 20:
                  elif guess > howClose:
                     print('Lager')
 
-             elif gokteller == 1:
-                print('you lose!'  'Het getal was: ' + str(randomNummer))
              else:
                  veloren = veloren + 1
                  break
@@ -41,5 +46,3 @@ while Rounds <= 20:
     else: 
         break
     Rounds = Rounds + 1
-
-print('Final Score!' + '\n' + ' Je hebt zoveel gewonnen: ' + str(gewonnen) + ' Je hebt zoveel veloren: ' +str(veloren))    
