@@ -2,9 +2,9 @@ import random
 gewonnen = 0
 veloren = 0
 Rounds = 1   
-gokteller = 10
 
 while Rounds <= 20:
+    gokteller = 10
 
     print("Dit is ronde: " + str(Rounds) + '\n'+ 'Je hebt: ' + str(gewonnen) + ' gewonnen. ' + ' Je hebt: ' + str(veloren) + ' veloren.')
     AnotherGame = input('Wil je nog een ronde spelen |yes or no: ')
